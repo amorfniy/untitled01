@@ -10,8 +10,9 @@ public class Main {
 
         for(int i = 0; i <= n; i++){
             if (numbers[i] == 0) {
-                int b = numbers[n-1];
+                int b = n-1;
                 numbers[i] = numbers[b];
+                numbers[b] = numbers[i];
                 b--;
             }
         }
